@@ -15,7 +15,7 @@ export default Menu;
 
 
 export async function getStaticProps(){
-    const res = await fetch('http://localhost:3001/data');
+    const res = await fetch('https://fooddbapi.vercel.app/data');
     const data = await res.json();
         return {
             props:{data},
